@@ -3,7 +3,7 @@ def binary_search(list, item):
     high = len(list) - 1
 
     while low <= high:          # 只要范围没有缩小到只包含一个元素，就检查中间的元素
-        mid = (low + high)
+        mid = (low + high) // 2
         guess = list[mid]
         if guess == item:       # 找到了元素
             return mid
